@@ -36,7 +36,7 @@ fun NavigationC(songs: List<Song>, player: ExoPlayer, viewModel: MusicViewmodel)
         }
 
         composable<PlayRoute> {
-            Play(viewModel = viewModel)
+            Play(viewModel = viewModel, player = player)
         }
     }
 }
